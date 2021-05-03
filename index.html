@@ -32,17 +32,40 @@
         </div>
 
         <div class="nav__desktop">
-                <div class="nav__desktop__logo">calc<span class="nav__desktop__logo--your">your</span>trip</div>
-                <div class="nav__desktop__items">
-                    <button class="nav__desktop__items__item">per 100 km</button>
-                    <button class="nav__desktop__items__item">route</button>
-                </div>
+            <div class="nav__desktop__logo">calc<span class="nav__desktop__logo--your">your</span>trip</div>
+            <div class="nav__desktop__items">
+                <button class="nav__desktop__items__item">per 100 km</button>
+                <button class="nav__desktop__items__item">route</button>
+            </div>
 
         </div>
 
 
 
     </nav>
+
+    <main>
+        <section class="per" id="per">
+            <div class="per__text-info">Average fuel consumption</div>
+            <div class="per__box">
+                <div class="per__box__kilometers">
+                    <div class="per__box__kilometers__text per__box__text">Kilometers traveled</div>
+                    <input placeholder="how many km?" type="text" class="per__box__kilometers__input per__box__input">
+                </div>
+                <div class="per__box__fuel">
+                    <div class="per__box__fuel__text per__box__text">Amount of fuel</div>
+                    <input placeholder="How many liters?" type="text" class="per__box__fuel__input per__box__input">
+                </div>
+                <div class="per__box__price">
+                    <div class="per__box__price__text per__box__text">Fuel price</div>
+                    <input placeholder="How much did it cost" type="text" class="per__box__price__input per__box__input">
+                </div>
+            </div>
+            <div class="per__box__result">85 liters</div>
+
+        </section>
+    </main>
+
 
     <script src="js/main.js"></script>
 </body>
