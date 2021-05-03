@@ -33,11 +33,24 @@ body {
 
 .nav__desktop__logo {
   padding: 0 .6em;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  cursor: pointer;
+}
+
+.nav__desktop__logo:hover {
+  color: #aad8d3;
 }
 
 .nav__desktop__logo--your {
   color: #aad8d3;
   text-shadow: 1px 1px black;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.nav__desktop__logo:hover .nav__desktop__logo--your {
+  color: #00adb5;
 }
 
 .nav__desktop__items__item {

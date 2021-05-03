@@ -5,4 +5,13 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.nav__desktop {
+  padding: .5em 2em;
+  font-size: 3.4rem;
+}
+
+.nav__desktop__items__item {
+  font-size: 3.4rem;
+}
 /*# sourceMappingURL=large.css.map */

@@ -32,12 +32,25 @@ body {
     // name of the site
     &__logo {
         padding: 0 .6em;
+        transition: color .3s;
+        cursor: pointer;
+    }
+
+    // change color of logo when user hover
+    &__logo:hover {
+        color: $light-blue;
     }
 
     // "your" word inside name of the site
     &__logo--your {
         color: $light-blue;
         text-shadow: 1px 1px black;
+        transition: color .3s;
+    }
+
+    // change color of "your" when user hover logo
+    &__logo:hover &__logo--your {
+        color: $blue;
     }
 
     // links on right side
@@ -55,9 +68,5 @@ body {
     &__items__item:hover {
         color: $light-blue;
     }
-
-
-
-
 
 }

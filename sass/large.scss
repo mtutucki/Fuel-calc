@@ -9,4 +9,14 @@ body {
     @include backgroundImage("../img/background/background-desktop.jpg");
 }
 
+.nav__desktop {
+    padding: .5em 2em;
+    font-size: 3.4rem;
+
+    // links on right side
+    &__items__item {
+        font-size: 3.4rem;
+    }
+}
+
 // pseudo nav with name of site
