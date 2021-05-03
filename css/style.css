@@ -20,9 +20,14 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
-.nav--mobile {
+.nav__desktop {
+  display: none;
+}
+
+.nav__mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,6 +35,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 2.4rem;
+  width: 100%;
   padding: .5em 1em;
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-box-align: center;
@@ -38,11 +44,37 @@ body {
   height: 10vh;
 }
 
-.nav--mobile__items {
+.nav__mobile__logo {
+  padding: .2em .4em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav__mobile__logo--your {
+  color: #aad8d3;
+  text-shadow: .5px .5px .2px black;
+}
+
+.nav__mobile__burger-menu {
+  padding: .2em .4em;
+  background: none;
+  border: 1px solid transparent;
+  font-size: 2.4rem;
+  color: #eeeeee;
+  -webkit-transition: border .3s;
+  transition: border .3s;
+}
+
+.nav__mobile__burger-menu:hover {
+  border: 1px solid black;
+}
+
+.nav__mobile__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 12vh;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -64,12 +96,12 @@ body {
   transition: transform .6s, -webkit-transform .6s;
 }
 
-.nav--mobile__items--active {
+.nav__mobile__items--active {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
 
-.nav--mobile__items__item {
+.nav__mobile__items__item {
   padding: .3em;
   font-size: 2rem;
   color: #eeeeee;
@@ -81,32 +113,7 @@ body {
   cursor: pointer;
 }
 
-.nav--mobile__items__item:hover {
+.nav__mobile__items__item:hover {
   color: #aad8d3;
-}
-
-.nav__logo {
-  padding: .2em .4em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.nav__logo--your {
-  color: #aad8d3;
-  text-shadow: .5px .5px .2px black;
-}
-
-.nav__burger-menu {
-  padding: .2em .4em;
-  background: none;
-  border: 1px solid transparent;
-  font-size: 2.4rem;
-  color: #eeeeee;
-  -webkit-transition: border .3s;
-  transition: border .3s;
-}
-
-.nav__burger-menu:hover {
-  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */

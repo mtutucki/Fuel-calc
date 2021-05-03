@@ -23,56 +23,25 @@ body {
     font-family: 'Hind', sans-serif;
     color: $white;
     @include backgroundImage("../img/background/background-phone.jpg");
+    overflow: hidden;
 }
 
 // pseudo nav with name of site
-.nav {
+.nav__desktop {
+    display: none;
+}
 
-    // navigation for mobile
-    &--mobile {
-        display: flex;
-        justify-content: space-between;
-        font-size: 2.4rem;
-        padding: .5em 1em;
-        background-color: rgba(0, 0, 0, .4);
-        align-items: center;
-        height: 10vh;
+// navigation for mobile
+.nav__mobile {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.4rem;
+    width: 100%;
+    padding: .5em 1em;
+    background-color: rgba(0, 0, 0, .4);
+    align-items: center;
+    height: 10vh;
 
-        // burger btn item
-        &__items {
-            display: flex;
-            height: 12vh;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, .4);
-            transform: scaleY(0);
-            transform-origin: top;
-            transition: transform .6s;
-
-            &--active {
-                transform: scaleY(1);
-            }
-
-            // nav links
-            &__item {
-                padding: .3em;
-                font-size: 2rem;
-                color: $white;
-                background: none;
-                border: none;
-                text-transform: uppercase;
-                transition: color .3s;
-                cursor: pointer;
-            }
-
-            &__item:hover {
-                color: $light-blue;
-            }
-        }
-    }
-
-    // name of the app > calc your trip nav home
     &__logo {
         padding: .2em .4em;
         text-transform: uppercase;
@@ -98,4 +67,42 @@ body {
     &__burger-menu:hover {
         border: 1px solid black;
     }
+
+
+    // burger btn item
+    &__items {
+        display: flex;
+        height: 12vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .4);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform .6s;
+
+        &--active {
+            transform: scaleY(1);
+        }
+
+        // nav links
+        &__item {
+            padding: .3em;
+            font-size: 2rem;
+            color: $white;
+            background: none;
+            border: none;
+            text-transform: uppercase;
+            transition: color .3s;
+            cursor: pointer;
+        }
+
+        &__item:hover {
+            color: $light-blue;
+        }
+    }
+
+
+
 }

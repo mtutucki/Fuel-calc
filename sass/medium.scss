@@ -6,7 +6,58 @@
 
 // change background to higher resoultion
 body {
+    // position: relative;
     @include backgroundImage("../img/background/background-tablet.jpg");
 }
 
-// pseudo nav with name of site
+// nav with name of site
+.nav__mobile {
+    display: none;
+}
+
+.nav__desktop {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: .5em 2em;
+    font-size: 3.2rem;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    // name of the site
+    &__logo {
+        padding: 0 .6em;
+    }
+
+    // "your" word inside name of the site
+    &__logo--your {
+        color: $light-blue;
+        text-shadow: 1px 1px black;
+    }
+
+    // links on right side
+    &__items__item {
+        border: none;
+        background: none;
+        color: $white;
+        font-size: 3.2rem;
+        padding: .2em .6em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: color .3s;
+    }
+
+    &__items__item:hover {
+        color: $light-blue;
+    }
+
+
+
+
+
+}

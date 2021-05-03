@@ -5,4 +5,54 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.nav__mobile {
+  display: none;
+}
+
+.nav__desktop {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: .5em 2em;
+  font-size: 3.2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav__desktop__logo {
+  padding: 0 .6em;
+}
+
+.nav__desktop__logo--your {
+  color: #aad8d3;
+  text-shadow: 1px 1px black;
+}
+
+.nav__desktop__items__item {
+  border: none;
+  background: none;
+  color: #eeeeee;
+  font-size: 3.2rem;
+  padding: .2em .6em;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.nav__desktop__items__item:hover {
+  color: #aad8d3;
+}
 /*# sourceMappingURL=medium.css.map */
