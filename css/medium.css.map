@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAOA,AAAA,IAAI,CAAC;EEND,gBAAgB,EDDE,gFAA8E,ECCxD,8CAAa;EACrD,qBAAqB,EAAE,KAAK;EAC5B,mBAAmB,EAAE,MAAM;EAC3B,eAAe,EAAE,KAAK;CFKzB",
+    "sources": [
+        "../sass/medium.scss",
+        "../sass/colors.scss",
+        "../sass/mixins.scss"
+    ],
+    "names": [],
+    "file": "medium.css"
+}

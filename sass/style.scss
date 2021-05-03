@@ -1,0 +1,101 @@
+// Mobile first - style.scss is first style loaded
+
+// import
+@import "colors.scss";
+@import "mixins.scss";
+
+// reset
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// set font size to 10px
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+    color: $white;
+    @include backgroundImage("../img/background/background-phone.jpg");
+}
+
+// pseudo nav with name of site
+.nav {
+
+    // navigation for mobile
+    &--mobile {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2.4rem;
+        padding: .5em 1em;
+        background-color: rgba(0, 0, 0, .4);
+        align-items: center;
+        height: 10vh;
+
+        // burger btn item
+        &__items {
+            display: flex;
+            height: 12vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, .4);
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform .6s;
+
+            &--active {
+                transform: scaleY(1);
+            }
+
+            // nav links
+            &__item {
+                padding: .3em;
+                font-size: 2rem;
+                color: $white;
+                background: none;
+                border: none;
+                text-transform: uppercase;
+                transition: color .3s;
+                cursor: pointer;
+            }
+
+            &__item:hover {
+                color: $light-blue;
+            }
+        }
+    }
+
+    // name of the app > calc your trip nav home
+    &__logo {
+        padding: .2em .4em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        // word "your" inside nav home text
+        &--your {
+            color: $light-blue;
+            text-shadow: .5px .5px .2px black;
+        }
+    }
+
+    // burger button on a right side
+    &__burger-menu {
+        padding: .2em .4em;
+        background: none;
+        border: 1px solid transparent;
+        font-size: 2.4rem;
+        color: $white;
+        transition: border .3s;
+    }
+
+    &__burger-menu:hover {
+        border: 1px solid black;
+    }
+}

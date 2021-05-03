@@ -1,1 +1,112 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+  color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(17%, rgba(0, 173, 181, 0.3)), color-stop(80%, rgba(170, 216, 211, 0.3))), url("../img/background/background-phone.jpg");
+  background-image: linear-gradient(90deg, rgba(0, 173, 181, 0.3) 17%, rgba(170, 216, 211, 0.3) 80%), url("../img/background/background-phone.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav--mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2.4rem;
+  padding: .5em 1em;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+}
+
+.nav--mobile__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 12vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+}
+
+.nav--mobile__items--active {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.nav--mobile__items__item {
+  padding: .3em;
+  font-size: 2rem;
+  color: #eeeeee;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  cursor: pointer;
+}
+
+.nav--mobile__items__item:hover {
+  color: #aad8d3;
+}
+
+.nav__logo {
+  padding: .2em .4em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav__logo--your {
+  color: #aad8d3;
+  text-shadow: .5px .5px .2px black;
+}
+
+.nav__burger-menu {
+  padding: .2em .4em;
+  background: none;
+  border: 1px solid transparent;
+  font-size: 2.4rem;
+  color: #eeeeee;
+  -webkit-transition: border .3s;
+  transition: border .3s;
+}
+
+.nav__burger-menu:hover {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */

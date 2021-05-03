@@ -1,0 +1,12 @@
+// desktop - 992px
+
+// imports
+@import "colors.scss";
+@import "mixins.scss";
+
+// change background to higher resoultion
+body {
+    @include backgroundImage("../img/background/background-desktop.jpg");
+}
+
+// pseudo nav with name of site
