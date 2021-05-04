@@ -109,7 +109,7 @@ body {
 
 .per {
     position: absolute;
-    top: 52%;
+    top: 54.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -118,7 +118,7 @@ body {
     align-items: center;
     padding: .1em .5em;
     width: 95%;
-    height: 60vh;
+    height: 65vh;
     font-size: 2rem;
     color: $white;
     background-color: rgba(0, 0, 0, .6);
@@ -137,6 +137,7 @@ body {
         }
     }
 
+    // underline
     &__text-info::before {
         content: '';
         position: absolute;
@@ -148,9 +149,50 @@ body {
         background-color: white;
     }
 
+    // store the kilometers, fuel and price 
     &__box {
+
+        // set all text uppercase
         &__text {
             text-transform: uppercase;
+        }
+
+        // count button
+        &__button {
+            position: relative;
+            padding: .5em;
+            color: $white;
+            background: none;
+            border: 1px solid black;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: color .3s;
+        }
+
+        // background color on hover 
+        &__button::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: '';
+            background-color: $light-blue;
+            z-index: -1;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .3s;
+        }
+
+        // background color on hover 
+        &__button:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        // change font color of count button
+        &__button:hover {
+            color: black;
         }
     }
 }

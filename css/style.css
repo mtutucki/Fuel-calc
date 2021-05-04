@@ -119,7 +119,7 @@ body {
 
 .per {
   position: absolute;
-  top: 52%;
+  top: 54.5%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -137,7 +137,7 @@ body {
           align-items: center;
   padding: .1em .5em;
   width: 95%;
-  height: 60vh;
+  height: 65vh;
   font-size: 2rem;
   color: #eeeeee;
   background-color: rgba(0, 0, 0, 0.6);
@@ -170,5 +170,47 @@ body {
 
 .per__box__text {
   text-transform: uppercase;
+}
+
+.per__box__button {
+  position: relative;
+  padding: .5em;
+  color: #eeeeee;
+  background: none;
+  border: 1px solid black;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.per__box__button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background-color: #aad8d3;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.per__box__button:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.per__box__button:hover {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
