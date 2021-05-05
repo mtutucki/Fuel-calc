@@ -71,15 +71,16 @@ body {
 
 }
 
-.per {
+.per,
+.route {
     top: 50%;
     padding: .3em .8em;
-    height: 60vh;
-    font-size: 3.6rem;
+    height: 65vh;
+    font-size: 3rem;
 
     // box name
     &__text-info {
-        font-size: 3.8rem;
+        font-size: 3.4rem;
     }
 
     // store the kilometers, fuel and price 
@@ -87,12 +88,12 @@ body {
 
         // count button
         &__button {
-            font-size: 3rem;
+            font-size: 2.8rem;
             padding: .4em;
         }
 
         &__input {
-            font-size: 3rem;
+            font-size: 2.8rem;
         }
     }
 }

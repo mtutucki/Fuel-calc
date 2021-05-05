@@ -15,7 +15,8 @@ body {
   font-size: 3.4rem;
 }
 
-.per {
+.per,
+.route {
   height: 70vh;
   font-size: 2.8rem;
   background-color: rgba(0, 0, 0, 0.6);
@@ -24,16 +25,19 @@ body {
   text-align: center;
 }
 
-.per__text-info {
+.per__text-info,
+.route__text-info {
   font-size: 3rem;
 }
 
-.per__box__button {
+.per__box__button,
+.route__box__button {
   font-size: 2.6rem;
   padding: .4em;
 }
 
-.per__box__input {
+.per__box__input,
+.route__box__input {
   font-size: 2.8rem;
 }
 /*# sourceMappingURL=large.css.map */

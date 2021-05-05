@@ -107,7 +107,8 @@ body {
 
 }
 
-.per {
+.per,
+.route {
     position: absolute;
     top: 54.5%;
     left: 50%;
@@ -192,5 +193,15 @@ body {
         &__button:hover {
             color: black;
         }
+    }
+}
+
+.per {
+    display: none;
+}
+
+.route {
+    &__box__result {
+        opacity: 1;
     }
 }

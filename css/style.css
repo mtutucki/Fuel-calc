@@ -117,7 +117,8 @@ body {
   color: #aad8d3;
 }
 
-.per {
+.per,
+.route {
   position: absolute;
   top: 54.5%;
   left: 50%;
@@ -146,13 +147,15 @@ body {
   text-align: center;
 }
 
-.per__text-info {
+.per__text-info,
+.route__text-info {
   position: relative;
   font-size: 2.1rem;
   text-transform: uppercase;
 }
 
-.per__text-info::before {
+.per__text-info::before,
+.route__text-info::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -164,11 +167,13 @@ body {
   background-color: white;
 }
 
-.per__box__text {
+.per__box__text,
+.route__box__text {
   text-transform: uppercase;
 }
 
-.per__box__button {
+.per__box__button,
+.route__box__button {
   position: relative;
   margin-top: .6em;
   padding: .5em;
@@ -181,7 +186,8 @@ body {
   transition: color .3s;
 }
 
-.per__box__button::before {
+.per__box__button::before,
+.route__box__button::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -200,14 +206,24 @@ body {
   transition: transform .3s, -webkit-transform .3s;
 }
 
-.per__box__button:hover::before {
+.per__box__button:hover::before,
+.route__box__button:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
 }
 
-.per__box__button:hover {
+.per__box__button:hover,
+.route__box__button:hover {
   color: black;
+}
+
+.per {
+  display: none;
+}
+
+.route__box__result {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
