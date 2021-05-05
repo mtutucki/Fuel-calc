@@ -33,9 +33,8 @@ const countPerHundredKm = () => {
 
     if (userFuel !=0 && userKilometers !=0 && userPrice !=0)
     {
-
         perResultAverage.innerHTML = `Average = ${perUserResultAverage}`;
-        perResultAverageFuel.innerHTML = `100km cost = ${perUserResultAverageFuel}`
+        perResultAverageFuel.innerHTML = `100km cost = ${perUserResultAverageFuel}`;
         perResultAverage.style.color = "white";
     }
     else if (userFuel !=0 && userKilometers !=0) {

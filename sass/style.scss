@@ -131,10 +131,7 @@ body {
         font-size: 2.1rem;
         text-transform: uppercase;
 
-        // line under name
-        &__underline {
-            width: 80%;
-        }
+
     }
 
     // underline
@@ -144,7 +141,7 @@ body {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 90%;
+        width: 100%;
         height: 2px;
         background-color: white;
     }
@@ -160,6 +157,7 @@ body {
         // count button
         &__button {
             position: relative;
+            margin-top: .6em;
             padding: .5em;
             color: $white;
             background: none;

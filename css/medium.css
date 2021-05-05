@@ -68,4 +68,24 @@ body {
 .nav__desktop__items__item:hover {
   color: #aad8d3;
 }
+
+.per {
+  top: 50%;
+  padding: .3em .8em;
+  height: 60vh;
+  font-size: 3.6rem;
+}
+
+.per__text-info {
+  font-size: 3.8rem;
+}
+
+.per__box__button {
+  font-size: 3rem;
+  padding: .4em;
+}
+
+.per__box__input {
+  font-size: 3rem;
+}
 /*# sourceMappingURL=medium.css.map */

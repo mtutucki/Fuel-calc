@@ -71,3 +71,28 @@ body {
 
 }
 
+.per {
+    top: 50%;
+    padding: .3em .8em;
+    height: 60vh;
+    font-size: 3.6rem;
+
+    // box name
+    &__text-info {
+        font-size: 3.8rem;
+    }
+
+    // store the kilometers, fuel and price 
+    &__box {
+
+        // count button
+        &__button {
+            font-size: 3rem;
+            padding: .4em;
+        }
+
+        &__input {
+            font-size: 3rem;
+        }
+    }
+}
