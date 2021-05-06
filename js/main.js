@@ -58,6 +58,7 @@ const countPerHundredKm = () => {
 // event listener uses funtion above
 perCount.addEventListener("click", countPerHundredKm);
 
+// counting for route plan 
 const countRoute = () => {
     let userRouteKilometers = routeKilometers.value;
     let userRouteFuel = routeFuel.value;
@@ -84,4 +85,5 @@ const countRoute = () => {
 
 }
 
+// add event listener which uses function above
 routeCount.addEventListener("click", countRoute);
