@@ -27,21 +27,21 @@
             <button class="nav__mobile__burger-menu"><i class="fas fa-bars"></i></button>
         </div>
         <div class="nav__mobile__items">
-            <button class="nav__mobile__items__item">per 100 km</button>
-            <button class="nav__mobile__items__item">route</button>
+            <button class="nav__item__per nav__mobile__items__item ">per 100 km</button>
+            <button class="nav__item__route nav__mobile__items__item ">route</button>
         </div>
         <div class="nav__desktop">
             <div class="nav__desktop__logo">calc<span class="nav__desktop__logo--your">your</span>trip</div>
             <div class="nav__desktop__items">
-                <button class="nav__desktop__items__item">per 100 km</button>
-                <button class="nav__desktop__items__item">route</button>
+                <button class="nav__desktop__items__item nav__desktop__item__per nav__item__per">per 100 km</button>
+                <button class="nav__desktop__items__item nav__desktop__item__route nav__item__route">route</button>
             </div>
 
         </div>
     </nav>
 
     <main>
-        <section class="per" id="per">
+        <section class="per" id="per" style="display: flex;">
             <div class="per__text-info">Average fuel consumption</div>
             <div class="per__box">
                 <div class="per__box__fuel">
@@ -57,14 +57,15 @@
                     <input placeholder="OPTIONAL" type="text" class="per__box__price__input per__box__input">
                 </div>
                 <button class="per__box__button">count</button>
-
             </div>
             <div class="per__box__results">
                 <div class="per__box__result">Average = 0 </div>
                 <div class="per__box__result__price">100km cost = Optional </div>
             </div>
+            <div class="per__box__carousel--left carousel-indicator carousel-indicator-left"><button class="per__box__carousel__button"><i class="fas fa-chevron-left per__box__carousel "></i></button></div>
+            <div class=" per__box__carousel--right carousel-indicator carousel-indicator-right"><button class="per__box__carousel__button"><i class="fas fa-chevron-right per__box__carousel "></i></button></div>
         </section>
-        <section class="route" id="route">
+        <section class="route" id="route" style="display: none;">
             <div class="route__text-info">route plan</div>
             <div class="route__box">
                 <div class="route__box__kilometers">
@@ -81,11 +82,12 @@
                     <input placeholder="OPTIONAL" type="text" class="route__box__price__input route__box__input">
                 </div>
                 <button class="route__box__button">count</button>
-
             </div>
             <div class="route__box__results">
                 <div class="route__box__result">Route cost = </div>
             </div>
+                <div class="route__box__carousel--left carousel-indicator carousel-indicator-left"><button class="route__box__carousel__button"><i class="fas fa-chevron-left route__box__carousel "></i></button></div>
+                <div class="route__box__carousel--right carousel-indicator carousel-indicator-right"><button class="route__box__carousel__button"><i class="fas fa-chevron-right route__box__carousel "></i></button></div>
         </section>
     </main>
 

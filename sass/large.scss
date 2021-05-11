@@ -9,6 +9,10 @@ body {
     @include backgroundImage("../img/background/background-desktop.jpg");
 }
 
+.nav__mobile {
+    display: none;
+}
+
 .nav__desktop {
     padding: .5em 2em;
     font-size: 3.4rem;
@@ -43,6 +47,10 @@ body {
 
         &__input {
             font-size: 2.8rem;
+        }
+
+        &__carousel {
+            font-size: 3rem;
         }
     }
 }

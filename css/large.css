@@ -6,6 +6,10 @@ body {
   background-size: cover;
 }
 
+.nav__mobile {
+  display: none;
+}
+
 .nav__desktop {
   padding: .5em 2em;
   font-size: 3.4rem;
@@ -39,6 +43,11 @@ body {
 .per__box__input,
 .route__box__input {
   font-size: 2.8rem;
+}
+
+.per__box__carousel,
+.route__box__carousel {
+  font-size: 3rem;
 }
 
 .footer {

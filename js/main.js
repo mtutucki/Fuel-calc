@@ -1,7 +1,11 @@
 // nav variables
 const navBurgerBtn = document.body.querySelector(".nav__mobile__burger-menu");
 const navMobileItems = document.body.querySelector(".nav__mobile__items");
+const navItemLinkPer = document.body.querySelectorAll(".nav__item__per");
+const navItemLinkRoute = document.body.querySelectorAll(".nav__item__route ");
 // per section variables
+const sectionPer = document.body.querySelector(".per");
+const sectionRoute = document.body.querySelector(".route")
 const perKilometers = document.body.querySelector(".per__box__kilometers__input");
 const perFuel = document.body.querySelector(".per__box__fuel__input");
 const perPrice = document.body.querySelector(".per__box__price__input");
@@ -14,6 +18,10 @@ const routeFuel = document.body.querySelector(".route__box__fuel__input")
 const routeFuelPrice = document.body.querySelector(".route__box__price__input")
 const routeResult = document.body.querySelector(".route__box__result")
 const routeCount = document.body.querySelector(".route__box__button")
+// carousel variables
+const carouselIndicators = document.body.querySelectorAll(".carousel-indicator");
+
+
 
 
 // funtion for burger menu which shows menu items / links
@@ -87,3 +95,50 @@ const countRoute = () => {
 
 // add event listener which uses function above
 routeCount.addEventListener("click", countRoute);
+
+// function set route section visible
+const applyRouteSection = () => {
+    sectionRoute.style.display = "flex";
+    sectionPer.style.display = "none";
+}
+
+// function set per section visible
+const applyPerSection = () => {
+    sectionPer.style.display = "flex";
+    sectionRoute.style.display = "none";
+}
+
+// function add event listener indicators to change visible
+carouselIndicators.forEach((indicator)=>{
+    indicator.addEventListener("click", function(){
+        if (sectionPer.style.display == "flex"){
+            applyRouteSection();
+        }
+        else {
+            applyPerSection();
+        }
+    })
+});
+
+// event listener for per link in navigation. It's for making a per section 
+// visible and close mobile menu
+navItemLinkPer.forEach((perLink)=>{
+    perLink.addEventListener("click", function() {
+        applyPerSection();
+        navMobileItems.classList.remove("nav__mobile__items--active")
+    });
+})
+
+// event listener for route link in navigation. It's for making a route section 
+// visible and close mobile menu
+navItemLinkRoute.forEach((routeLink)=>{
+    routeLink.addEventListener("click", function() {
+        applyRouteSection();
+        navMobileItems.classList.remove("nav__mobile__items--active")
+    });
+})
+
+
+
+
+
