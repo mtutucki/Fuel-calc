@@ -1,3 +1,8 @@
+#Fuel calc
+
+Previev:
+https://mtutucki.github.io/Fuel-calc/
+
 ### Table of contents
 * [About the project](#about-the-project)
 * [Technologies](#technologies)
